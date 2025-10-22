@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Due Certificate - KSR College of Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="KSRCE_New_logo.webp" alt="KSR College Logo" class="logo">
+                <div class="college-info">
+                    <h1>KSR College of Engineering</h1>
+                    <p class="college-subtitle">Autonomous Institution | NAAC 'A' Grade</p>
+                    <p class="college-address">Tiruchengode, Tamil Nadu - 637215</p>
+                </div>
+            </div>
+            <div class="header-decoration"></div>
+        </header>
+
+        <!-- Form Title -->
+        <div class="form-title">
+            <h2>No Due Certificate Application</h2>
+            <p class="form-subtitle">Online Application for No Due Certificate</p>
+        </div>
+
+        <!-- Main Form -->
+        <form id="noDueForm" class="no-due-form">
+            <!-- Personal Information Section -->
+            <div class="form-section">
+                <h3><i class="fas fa-user"></i> Personal Information</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="studentName">Full Name *</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerNumber">Register Number *</label>
+                        <input type="text" id="registerNumber" name="registerNumber" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rollNumber">Roll Number *</label>
+                        <input type="text" id="rollNumber" name="rollNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email ID *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="parentPhone">Parent Phone Number *</label>
+                        <input type="tel" id="parentPhone" name="parentPhone" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Information Section -->
+            <div class="form-section">
+                <h3><i class="fas fa-graduation-cap"></i> Academic Information</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">Department *</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="cse">Computer Science and Engineering (CSE)</option>
+                            <option value="ece">Electronics and Communication Engineering (ECE)</option>
+                            <option value="eee">Electrical and Electronics Engineering (EEE)</option>
+                            <option value="mech">Mechanical Engineering (MECH)</option>
+                            <option value="it">Information Technology (IT)</option>
+                            <option value="cyber">Cyber Security</option>
+                            <option value="bio">Bio Medical Engineering</option>
+                            <option value="csd">Computer Science and Design (CSD)</option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="automobile">Automobile Engineering</option>
+                            <option value="iot">Internet of Things (IoT)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year of Study *</label>
+                        <select id="year" name="year" required>
+                            <option value="">Select Year</option>
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Fourth Year</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="semester">Semester *</label>
+                        <select id="semester" name="semester" required>
+                            <option value="">Select Semester</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="batch">Batch Year *</label>
+                        <input type="text" id="batch" name="batch" placeholder="e.g., 2020-2024" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Due Requirements Section -->
+            <div class="form-section">
+                <h3><i class="fas fa-clipboard-check"></i> No Due Certificate Requirements</h3>
+                <div class="checkbox-grid">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="library" name="clearance[]" value="library">
+                        <label for="library">
+                            <i class="fas fa-book"></i>
+                            <span>Library Clearance</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="hostel" name="clearance[]" value="hostel">
+                        <label for="hostel">
+                            <i class="fas fa-bed"></i>
+                            <span>Hostel Clearance</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="lab" name="clearance[]" value="lab">
+                        <label for="lab">
+                            <i class="fas fa-flask"></i>
+                            <span>Laboratory Clearance</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="accounts" name="clearance[]" value="accounts">
+                        <label for="accounts">
+                            <i class="fas fa-calculator"></i>
+                            <span>Accounts Clearance</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="transport" name="clearance[]" value="transport">
+                        <label for="transport">
+                            <i class="fas fa-bus"></i>
+                            <span>Transport Clearance</span>
+                        </label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="department-clearance" name="clearance[]" value="department">
+                        <label for="department-clearance">
+                            <i class="fas fa-building"></i>
+                            <span>Department Clearance</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reason Section -->
+            <div class="form-section">
+                <h3><i class="fas fa-edit"></i> Application Details</h3>
+                <div class="form-group">
+                    <label for="reason">Reason for No Due Certificate *</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Select Reason</option>
+                        <option value="graduation">Graduation/Course Completion</option>
+                        <option value="transfer">College Transfer</option>
+                        <option value="job">Placement/Job Requirements</option>
+                        <option value="higher-studies">Higher Studies</option>
+                        <option value="personal">Personal Reasons</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information/Comments</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any additional details you'd like to mention..."></textarea>
+                </div>
+            </div>
+
+            <!-- Document Upload Section -->
+            <div class="form-section">
+                <h3><i class="fas fa-upload"></i> Document Upload</h3>
+                <div class="upload-area">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Upload supporting documents (if any)</p>
+                    <input type="file" id="documents" name="documents" multiple accept=".pdf,.jpg,.jpeg,.png">
+                    <label for="documents" class="upload-btn">Choose Files</label>
+                </div>
+            </div>
+
+            <!-- Declaration Section -->
+            <div class="form-section">
+                <h3><i class="fas fa-gavel"></i> Declaration</h3>
+                <div class="declaration-box">
+                    <p>I hereby declare that all the information provided above is true and correct to the best of my knowledge. I understand that any false information may result in the rejection of my application.</p>
+                    <div class="checkbox-item declaration-check">
+                        <input type="checkbox" id="declaration" name="declaration" required>
+                        <label for="declaration">
+                            <span>I agree to the above declaration *</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="reset" class="btn-secondary">
+                    <i class="fas fa-redo"></i> Reset Form
+                </button>
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i> Submit Application
+                </button>
+            </div>
+        </form>
+
+        <!-- Progress Indicator -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text">Form completion: <span id="progress-percentage">0%</span></p>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h2>Application Submitted Successfully!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Your No Due Certificate application has been submitted successfully.</p>
+                <p><strong>Application ID:</strong> <span id="applicationId"></span></p>
+                <p>You will receive a confirmation email shortly. Please keep this Application ID for future reference.</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal()" class="btn-primary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
